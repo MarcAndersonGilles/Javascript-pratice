@@ -1,20 +1,3 @@
-
-const verifyNumberEqual = (number1, number2) => {
-    if(number1 === number2){
-        return console.log('Le nombre est égal à lui même');
-    }
-    else{
-        return console.log('Le nombre n\'est pas égal à lui même')
-    }
-}
-verifyNumberEqual(11, 10);
-
-
-
-
-
-
-
 /////////////////////////////////////////////////////////////////////////
 // //1. Counter jusqu'a 10
 // const countToTen = (count) => {
@@ -113,3 +96,15 @@ verifyNumberEqual(11, 10);
 //   }
 //   // exemple d'utilisation
 //   console.log(factoriel(b)); // affiche 120
+
+/////////////////////////////////////////////////////////////////////////
+//8. Counter jusqu'a 10
+// const verifyNumberEqual = (number1, number2) => {
+//     if(number1 === number2){
+//         return console.log('Le nombre est égal à lui même');
+//     }
+//     else{
+//         return console.log('Le nombre n\'est pas égal à lui même')
+//     }
+// }
+// verifyNumberEqual(11, 10);

@@ -6,11 +6,14 @@ type Props = {
     countCountm1: (bgColor: any) => void
     bgColorBlue: boolean
     bgColorYellow: boolean
+    handleAfficherNom: () => void
+    afficherNom: string
   
 
 }
 export default function Upstate({countCounter,countNumber,countCountm1,
   bgColorBlue,bgColorYellow
+  ,handleAfficherNom,afficherNom
 } : Props) {
   
   return (
@@ -19,7 +22,9 @@ export default function Upstate({countCounter,countNumber,countCountm1,
       <button className={`bg-green-400 p-10 rounded-lg ${bgColorBlue ? 'bg-zinc-700' : 'bg-yellow-300'}`} onClick={countCounter}>Click moi</button>
         <button className={`bg-red-500 p-10 rounded-lg ${bgColorYellow ? 'bg-purple-500' : 'bg-green-400'}`} onClick={countCountm1}>Click moi</button>
       </div>     
-      <div className='text-black border-black p-5'><h1>Chiffre actuel :{countNumber}  </h1> </div>  
+      <div className='flex flex-col text-black border-black p-5'><h1>Chiffre actuel :{countNumber}  </h1>
+      <button className='flex flex-col p-5 bg-gray-600' onClick={handleAfficherNom}>Afficher mon nom</button>
+      <p className='font-bold text-base'>{afficherNom}</p> </div>  
     </div>
   )
 }

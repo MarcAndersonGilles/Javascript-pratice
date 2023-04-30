@@ -5,6 +5,11 @@ import UseEffectFun from './UseEffectFun'
 export default function States() {
   const [bgColorBlue, setbgColorBlue] = useState(false)
   const [bgColorYellow, setbgColorYellow] = useState(false)
+  const [afficherNom, setafficherNom] = useState('')
+
+  const handleAfficherNom = () => {
+   return setafficherNom('Mon nom est Marc')
+  }
 
   const [count, setcount] = useState(0)
   const handleClick = (bgColor: any) => {
@@ -29,7 +34,8 @@ export default function States() {
         countNumber={count}
         bgColorBlue={bgColorBlue}
         bgColorYellow={bgColorYellow}
-      
+        handleAfficherNom={handleAfficherNom}
+        afficherNom={afficherNom}
       />
       <UseEffectFun />
     </div>

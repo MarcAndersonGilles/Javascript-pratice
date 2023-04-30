@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Input.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Input.js", "components/MaphtmlTEST.js"],
   "exclude": ["node_modules"]
 }

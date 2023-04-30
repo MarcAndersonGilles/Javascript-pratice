@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import UpState from './UpstateFun'
 import UseEffectFun from './UseEffectFun'
 
@@ -27,6 +27,11 @@ export default function States() {
       setbgColorBlue(false)
     }
   }
+  useEffect(() => {
+    console.log('La page a été chargée')
+    console.log(`La couleur actuelle du boutton gauche est ${bgColorBlue ? 'bleu' : 'zinc'}`)
+    console.log(`La couleur actuelle du boutton droit est ${bgColorYellow ? 'jaune' : 'zinc'}`)
+  },[bgColorBlue,bgColorYellow])
   return (
     <div className='text-black w-full h-full '>
       <UpState countCounter={handleClick}

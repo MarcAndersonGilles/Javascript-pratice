@@ -17,7 +17,7 @@ export default function monster() {
             "Seed Bomb"
         ]
     }]`
-    console.log(JSON.parse(monster))
+    console.log(JSON.parse(monster)) // This is a string, not an object
   return (
     <div className=''>
         <h1>{monster}</h1>

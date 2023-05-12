@@ -6,6 +6,8 @@ import States from '../components/useState/States'
 import Monster from '@/components/jsonTest/Monster'
 import UseEffectFun from '@/components/useState/UseEffectFun'
 import UseRef from '@/components/useRef/UseRef'
+import Promises from '@/components/promises/Promises'
+import AsyncAwait from '@/components/promises/AsyncAwait'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,7 +17,9 @@ export default function Home() {
       <States /> */}
       {/* <Monster /> */}
       {/* { <UseEffectFun /> } */}
-      <UseRef />
+      {/* <UseRef /> */}
+      {/* <Promises /> */}
+      <AsyncAwait />
     </main>
   )
 }

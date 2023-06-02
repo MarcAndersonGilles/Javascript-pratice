@@ -8,7 +8,7 @@ import UseEffectFun from '@/components/useState/UseEffectFun'
 import UseRef from '@/components/useRef/UseRef'
 import Promises from '@/components/promises/Promises'
 import AsyncAwait from '@/components/promises/AsyncAwait'
-import Axios from '@/components/axios/Axios'
+import Axios from '@/components/Axios/Axios'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
